@@ -986,4 +986,34 @@ text-align: center;
 text-align: center;
 
 }
+
+.view-qr{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #6eb5ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.view-qr:hover {
+  background-color: #afcbff;
+}
+
+.view-qr:active {
+  background-color: #afcbff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.course-col .view-qr{
+  margin-top: 35px;
+  justify-content: center;
+}
  
