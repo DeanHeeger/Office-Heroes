@@ -72,3 +72,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateInputs();
 });
+
+function viewQR() {
+  window.open("./codeQR.png", "Donate", "width=650,height=650");
+};
