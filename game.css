@@ -9,7 +9,6 @@
     min-height: 100vh ;
     width:100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(gamee\ \(1\).jpg);
-  
     background-position: center;
     background-size: cover ;
     position: relative;
@@ -46,23 +45,20 @@
     top:0;
   }
   .nav-links ul li a:hover{
-    background-color: crimson;
+    background-color: green;
   }
-  .nav-links ul li ::after
-  {
+  .nav-links ul li ::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: green; /* #f44336 */
   display: block;
   margin:auto;
   transition: 0.5s;
-  
   }
   
   .nav-links ul li:hover::after{
   width: 100%;
-  
   }
   
   .text-box{
