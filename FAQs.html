@@ -78,6 +78,7 @@
             <li><a href="Events.html" id="tab-color2">EVENTS</a></li>
             <li><a href="FAQs.html" id="tab-color3">FAQs</a></li>
             <li><a href="newContactUs.html" id="tab-color4">CONTACT US</a></li>
+            <li><a href="poplogin.html" id="tab-color5">LOGIN</a></li>
           </ul>
 
           <script>
@@ -88,12 +89,14 @@
             document.getElementById("tab-color2").onmouseover = function() {mouseOver2()};
             document.getElementById("tab-color3").onmouseover = function() {mouseOver3()};
             document.getElementById("tab-color4").onmouseover = function() {mouseOver4()};
+            document.getElementById("tab-color5").onmouseover = function() {mouseOver5()};
 
             document.getElementById("tab-color").onmouseout = function() {mouseOut()};
             document.getElementById("tab-color1").onmouseout = function() {mouseOut1()};
             document.getElementById("tab-color2").onmouseout = function() {mouseOut2()};
             document.getElementById("tab-color3").onmouseout = function() {mouseOut3()};
             document.getElementById("tab-color4").onmouseout = function() {mouseOut4()};
+            document.getElementById("tab-color5").onmouseout = function() {mouseOut5()};
 
             //HOME
             function mouseOver(){
@@ -127,13 +130,19 @@
               document.getElementById("tab-color3").style.color = "white";
             }
 
-            //CONTACT US
             //FAQs
             function mouseOver4(){
               document.getElementById("tab-color4").style.color = "green";
             }
             function mouseOut4(){
               document.getElementById("tab-color4").style.color = "white";
+            }
+
+            function mouseOver5(){
+              document.getElementById("tab-color5").style.color = "green";
+            }
+            function mouseOut5(){
+              document.getElementById("tab-color5").style.color = "white";
             }
           </script>
 

@@ -30,9 +30,10 @@
 }
 
 .nav div.logo{
-    width: 180px;
+    width: 180px; /*180*/
     height: 10px;
     position: absolute;
+    cursor: pointer;
 }
 
 .nav div.logo a{
