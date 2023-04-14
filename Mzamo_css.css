@@ -1017,3 +1017,21 @@ text-align: center;
   justify-content: center;
 }
  
+.content-below .ifm iframe{
+  align-items: center;
+
+ justify-content: center;
+ align-items: center;
+}
+section h2{
+margin-top: -20px;
+width:80%;
+margin: auto;
+text-align: center;
+}
+.ifm iframe{
+  justify-content: center;
+  margin-left: 190px;
+text-align: center;
+
+}
