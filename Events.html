@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-   
-    
+  <head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mzamo Events</title>
     <link rel='stylesheet' href='Mzamo_css.css'/>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bttn.css"/>
+    <link href="bootstrap.min.css" rel="stylesheet">
     <script src="mainJS.js"></script>
-     <link rel="stylesheet" href="bttn.css"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ff9ce49235.js" crossorigin="anonymous"></script>
     
     <style> 
-        *
+      *
+      footer {
+        background-color: #0A4876;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head> 
 
-          footer {
-  background-color: #0A4876;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-          </style>
-
-
-</head>
- 
 <body>
-   <section class = "header">
+  <section class = "header">
     <!--Nav Bar-->
-      <nav class="nav">
-        <div class="container">
-          <div class="logo">
-            <a href="index.html"><img alt="school logo" src="school_logo.png"></a>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img alt="school logo" src="school_logo.png"></a>
         </div>
         <div class="main_list" id="mainListDiv">
           <ul>
@@ -46,101 +40,88 @@
             <li><a href="About us.html" id="tab-color1">ABOUT US</a></li>
             <li><a href="Events.html" id="tab-color2">EVENTS</a></li>
             <li><a href="FAQs.html" id="tab-color3">FAQs</a></li>
-            <li><a href="newContactUs.html" id="tab-color4">CONTACT US</a></li>
+            <li><a href="newContactUs.html" id="tab-color4">CONTACT</a></li>
             <li><a href="poplogin.html" id="tab-color5">LOGIN</a></li>          
           </ul>
 
-          <script>
+        <script>
 
-            //NAV BAR COLOUR CHANGER
-            document.getElementById("tab-color").onmouseover = function() {mouseOver()};
-            document.getElementById("tab-color1").onmouseover = function() {mouseOver1()};
-            document.getElementById("tab-color2").onmouseover = function() {mouseOver2()};
-            document.getElementById("tab-color3").onmouseover = function() {mouseOver3()};
-            document.getElementById("tab-color4").onmouseover = function() {mouseOver4()};
-            document.getElementById("tab-color5").onmouseover = function() {mouseOver5()};
+          //NAV BAR COLOUR CHANGER
+          document.getElementById("tab-color").onmouseover = function() {mouseOver()};
+          document.getElementById("tab-color1").onmouseover = function() {mouseOver1()};
+          document.getElementById("tab-color2").onmouseover = function() {mouseOver2()};
+          document.getElementById("tab-color3").onmouseover = function() {mouseOver3()};
+          document.getElementById("tab-color4").onmouseover = function() {mouseOver4()};
+          document.getElementById("tab-color5").onmouseover = function() {mouseOver5()};
 
-            document.getElementById("tab-color").onmouseout = function() {mouseOut()};
-            document.getElementById("tab-color1").onmouseout = function() {mouseOut1()};
-            document.getElementById("tab-color2").onmouseout = function() {mouseOut2()};
-            document.getElementById("tab-color3").onmouseout = function() {mouseOut3()};
-            document.getElementById("tab-color4").onmouseout = function() {mouseOut4()};
-            document.getElementById("tab-color5").onmouseout = function() {mouseOut5()};
+          document.getElementById("tab-color").onmouseout = function() {mouseOut()};
+          document.getElementById("tab-color1").onmouseout = function() {mouseOut1()};
+          document.getElementById("tab-color2").onmouseout = function() {mouseOut2()};
+          document.getElementById("tab-color3").onmouseout = function() {mouseOut3()};
+          document.getElementById("tab-color4").onmouseout = function() {mouseOut4()};
+          document.getElementById("tab-color5").onmouseout = function() {mouseOut5()};
 
-            //HOME
-            function mouseOver(){
-              document.getElementById("tab-color").style.color = "green";
-            }
-            function mouseOut(){
-              document.getElementById("tab-color").style.color = "white";
-            }
+          //HOME
+          function mouseOver(){
+            document.getElementById("tab-color").style.color = "green";
+          }
+          function mouseOut(){
+            document.getElementById("tab-color").style.color = "white";
+          }
 
-            //ABOUT US
-            function mouseOver1(){
-              document.getElementById("tab-color1").style.color = "green";
-            }
-            function mouseOut1(){
-              document.getElementById("tab-color1").style.color = "white";
-            }
+          //ABOUT US
+          function mouseOver1(){
+            document.getElementById("tab-color1").style.color = "green";
+          }
+          function mouseOut1(){
+            document.getElementById("tab-color1").style.color = "white";
+          }
 
-            //EVENTS
-            function mouseOver2(){
-              document.getElementById("tab-color2").style.color = "green";
-            }
-            function mouseOut2(){
-              document.getElementById("tab-color2").style.color = "white";
-            }
+          //EVENTS
+          function mouseOver2(){
+            document.getElementById("tab-color2").style.color = "green";
+          }
+          function mouseOut2(){
+            document.getElementById("tab-color2").style.color = "white";
+          }
 
-            //FAQs
-            function mouseOver3(){
-              document.getElementById("tab-color3").style.color = "green";
-            }
-            function mouseOut3(){
-              document.getElementById("tab-color3").style.color = "white";
-            }
+          //FAQs
+          function mouseOver3(){
+            document.getElementById("tab-color3").style.color = "green";
+          }
+          function mouseOut3(){
+            document.getElementById("tab-color3").style.color = "white";
+          }
 
-            //FAQs
-            function mouseOver4(){
-              document.getElementById("tab-color4").style.color = "green";
-            }
-            function mouseOut4(){
-              document.getElementById("tab-color4").style.color = "white";
-            }
+          //FAQs
+          function mouseOver4(){
+            document.getElementById("tab-color4").style.color = "green";
+          }
+          function mouseOut4(){
+            document.getElementById("tab-color4").style.color = "white";
+          }
 
-            function mouseOver5(){
-              document.getElementById("tab-color5").style.color = "green";
-            }
-            function mouseOut5(){
-              document.getElementById("tab-color5").style.color = "white";
-            }
-          </script>
+          function mouseOver5(){
+            document.getElementById("tab-color5").style.color = "green";
+          }
+          function mouseOut5(){
+            document.getElementById("tab-color5").style.color = "white";
+          }
+        </script>
 
 
         </div>
       </div>
-     </nav>
+    </nav>
 
-          
-          
-          
-          <div class="text-box">
-          <h1>Events</h1>
-          
-         
-          
-          </div>
-          
-          </section>
-     
-    <!--EVENTS SECTION-->
-   
-   
-</nav>
+    <div class="text-box">
+      <h1>
+        Events
+      </h1>
+    </div>
+  </section>
 
-
-
-</section>
-
+<!--EVENTS SECTION-->
 
 <br>
 <br>
@@ -174,76 +155,61 @@
 
 <div class="container">
     <h1>Our School Events </h1>
-    <div class="row">
+      <div class="row">
         <div class="col-md-6 col-lg-3">
-           
-           
-            <div class="card">
-               
-                <img alt="learners in a classroom" src="backtosch.jfif" class="card-img-top  ">
-                
-                <div class="card-block">
-                    <h3 class="card-title" >Back to School</h3>
+          <div class="card">     
+            <img alt="learners in a classroom" src="backtosch.jfif" class="card-img-top  ">
+              <div class="card-block">
+                <h3 class="card-title" >
+                  Back to School
+                </h3>
               
-               <p > Host a fun and exciting event to welcome students back to school every year...</p> 
-              
-                </div>
-            </div>
-            
-          
+                <p> Host a fun and exciting event to welcome students back to school every year...</p> 
+              </div>
+          </div>  
         </div>
 
-        
-            <div class="col-md-6 col-lg-3">
-               
-                <div class="card">
-                    <img alt="school kids posing with laptops" src="donations.jpg" class="card-img-top  ">
-                    
-                    <div class="card-block">
-                        <h3 class="card-title" >Donation</h3>
-                  
-                   <p >Generous Donation allows the school to upgrade computer lab equipment...</p> 
-                  
-                    </div>
-                </div>
-                
-            </div>
-
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img alt="school kids posing with laptops" src="donations.jpg" class="card-img-top  ">       
+              <div class="card-block">
+                <h3 class="card-title" >Donation</h3>  
+                  <p>
+                    Generous Donation allows the school to upgrade computer lab equipment...
+                  </p> 
+              </div>
+          </div>   
+        </div>
             
-                <div class="col-md-6 col-lg-3">
-                    
-                    <div class="card">
-                        <img alt="learners with certificates" src="pricing.jpg" class="card-img-top  ">
-                        <div class="card-block">
-                            <h3 class="card-title" > Annual prize Day</h3>
-                       <p >Annual Prize Day recognizes the academic prowess of top pupils per subject...</p> 
-                        </div>
-                    </div>
-                    
-                </div>
+        <div class="col-md-6 col-lg-3">           
+          <div class="card">
+            <img alt="learners with certificates" src="pricing.jpg" class="card-img-top  ">
+              <div class="card-block">
+                <h3 class="card-title"> 
+                  Annual prize Day
+                </h3>
+                <p>
+                  Annual Prize Day recognizes the academic prowess of top pupils per subject...
+                </p> 
+              </div>
+          </div>
+        </div>
 
-                <div class="col-md-6 col-lg-3">
-                  
-                    <div class="card">
-                        <img alt="cultural performance on stage" src="heritage.jpg" class="card-img-top  ">
-                      
-                        <div class="card-block">
-                            <h3 class="card-title" >Cultural Day</h3> 
-                       
-                       <p >We organize cultural day to teach our children the key values of different cultures...</p>  
-                        
-                        </div>
-                    </div>
-                
-                </div>
-    </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img alt="cultural performance on stage" src="heritage.jpg" class="card-img-top  ">         
+              <div class="card-block">
+                <h3 class="card-title" >
+                  Cultural Day
+                </h3>       
+                <p>
+                  We organize cultural day to teach our children the key values of different cultures...
+                </p>       
+              </div>
+          </div>
+        </div>
+      </div>
 </div>
-
-
-
-
-
-
 <!--<p>
 We hope you will gain a sense of why we believe our educational school system is the perfect preparation for our puplis
 </p><br>
@@ -258,16 +224,14 @@ Mzamotsha lives be the words of late Nelson Mandela:
 <blockquote>
   <p style = color:blue>  "Education is the most powerful weapon which you can use to change the world."</p>
 </blockquote> <br>-->
-
- <br>
 <br>
 <br>
 <br>
-
+<br>
 
 <!--FACILITIES-->
 <section class = "facilities">
-  <h1>Upcoming Events </h1>
+  <h2>Upcoming Events </h2>
   
   
   <div class ="row">
