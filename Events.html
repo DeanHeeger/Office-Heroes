@@ -14,8 +14,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ff9ce49235.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -243,10 +243,7 @@ Mzamotsha lives be the words of late Nelson Mandela:
   <h2>Upcoming Events </h2>
   
   
-  <div class ="row">
-
- 
-  
+<div class ="row">
   <div class = "facilities-col">
     <img alt="schoolkids playing basketball" src ="basketB.jpg">
   
@@ -256,13 +253,13 @@ Mzamotsha lives be the words of late Nelson Mandela:
   </div>
   
   <div class = "facilities-col">
-      <img alt="debate animation" src ="debatesch.png">
+    <img alt="debate animation" src ="debatesch.png">
     
-      <h3>Social discussions </h3>
-      <p>Our first ever social discussion </p>
-      <h3>31 MAR , 2023</h3>
-    </div>
-
+    <h3>Social discussions </h3>
+    <p>Our first ever social discussion </p>
+    <h3>31 MAR , 2023</h3>
+  </div>
+</div>
     <!--<div class="center">
       <div class="outer button">
           <a href="game_page.html"><button>Play Games Here!!</button></a>
@@ -271,45 +268,7 @@ Mzamotsha lives be the words of late Nelson Mandela:
       </div>
     </div>-->
     <!-- Button to trigger the modal -->
-
-<div class="d-flex justify-content-center">
-  <button 
-    type="button" 
-    class="btn btn-info mb-3 text-center w-25 rounded-5" 
-    data-toggle="modal" 
-    data-target="#myModal"
-  >
-    Open Me
-  </button>
-
-<!-- Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <!-- Modal header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Popup</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p>Click the button below to play some games:</p>
-          <button type="button" class="btn btn-success text-center" onclick="location.href='game_page.html';">Play games here!</button>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger text-center" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>-->
-  
-  </div>
+    
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" 
   integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" 
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -336,7 +295,40 @@ VanillaTilt.init(document.querySelectorAll(".facilities-col"));
 
 </script>
   
-  </section >
+</section>
+<!--<div class="d-flex justify-content-center">-->
+  <button 
+    type="button" 
+    class="btn btn-success mb-3 text-center w-25 rounded-5 position-relative text-uppercase" 
+    data-toggle="modal" 
+    data-target="#myModal"
+  >
+    Open Me
+  </button>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Popup</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Click the button below to play some games:</p>
+          <button type="button" class="btn btn-success text-center" onclick="location.href='game_page.html';">Play games here!</button>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-center" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <a href="#" class="to-top" aria-label="Back To Top">
     <i class="fas fa-angle-double-up"></i>
