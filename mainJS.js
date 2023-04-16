@@ -73,6 +73,7 @@ form.addEventListener('submit', (e) => {
   validateInputs();
 });
 
+//function for QR code popup
 function viewQR() {
   window.open("./codeQR.png", "Donate", "width=650,height=650");
 };
