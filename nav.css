@@ -29,6 +29,7 @@ body{
 .navbar-area {
   background: rgba(0,0,0,.6);
   border-bottom: 1px solid #000;
+  width: 100%;
 }
 .site-navbar {
   display: flex;
