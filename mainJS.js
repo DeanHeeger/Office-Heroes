@@ -77,3 +77,8 @@ form.addEventListener('submit', (e) => {
 function viewQR() {
   window.open("./codeQR.png", "Donate", "width=650,height=650");
 };
+
+//function for QR code popup
+function viewLogin() {
+  window.open("./poplogin.html", "Login", "width=650,height=650");
+};
