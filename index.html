@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="Mzamo_css - Copy">
     <link rel="stylesheet" href="nav.css">
     <script src="mainJS.js"></script>
+    <script src="nav.js"></script>
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="stylesheet" href="styles.css">
@@ -23,9 +24,9 @@
 </head>
 <body onload="show()">
 
- <section class = "header">
+ <!--<section class = "header">-->
 <!--Nav Bar-->
-     <nav class="nav">
+     <!--<nav class="nav">
       <div class="container">
         <div class="logo">
           <a href="index.html"><img alt="school logo" src="school_logo.png"></a>
@@ -107,10 +108,35 @@
 
         </div>
       </div>
-     </nav>
+     </nav>-->
+
+      <!-- site-navbar start -->
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="site-navbar">
+          <!-- site logo -->
+          <a href="#home" class="site-logo"><img alt="school logo" src="school_logo.png" class="logo"></a>
+  
+          <!-- site menu/nav -->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="ContactUs.html">CONTACT US</a></li>
+          </ul>
+  
+          <!-- nav-toggler for mobile version only -->
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </div><!-- navbar-area end -->
 
 <!--Text box-->
-<div class="text-box" id="home">
+<section class = "header">
+  <div class="text-box" id="home">
   <h1>Welcome to Mzamomtsha</h1>
   
   <p>Where greatness happens</p>
@@ -119,8 +145,10 @@
     <iframe src="https://priceless-northcutt-b868c1.netlify.app/index.html"width="50%" height="300" style="border:1px solid lightgreen;" sandbox=""></iframe>
   </div>
   </div>
+</section>
 
-</section>    
+
+<!--</section>-->    
 <br>
 
 <div class ="container reveal">
