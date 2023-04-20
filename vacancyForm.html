@@ -115,7 +115,7 @@ input[type="file"]:hover::before {
       <script>
         const form = document.getElementById('vacancyForm');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit'), (event) => {
   event.preventDefault(); // Prevent the form from submitting normally
 
   // Get the values of the form fields
@@ -128,9 +128,9 @@ form.addEventListener('submit', (event) => {
 
   // Create a FormData object and append the form data
   const formData = new FormData();
-  formData.append('name', name);
- 
+  formData.append('name', name); 
 }
+
       </script> 
 </body>
 </html>
