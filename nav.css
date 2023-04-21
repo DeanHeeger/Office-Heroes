@@ -60,7 +60,7 @@ a.site-logo {
   padding: 20px;
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .site-navbar ul li a:hover {
   background: rgba(255,255,255,.1);
