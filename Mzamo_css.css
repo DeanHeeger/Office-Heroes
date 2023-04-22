@@ -347,9 +347,9 @@ padding: 2px;
 
 /*campus*/
 .campus{
-width:80%;
-margin:auto;
-text-align:center;
+width: 80%;
+margin: auto;
+text-align: center;
 padding-top: 50px ;  
 }
 
@@ -357,54 +357,49 @@ padding-top: 50px ;
   flex-basis: 32%;
   border-radius:10px;
   margin-bottom: 30px;
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
   
   
 }
 
 .campus-col img{
- width:100% ;
- display:block;
+ width: 100% ;
+ display: block;
  height: 60%;
 }
 
 .layer{
-  background:transparent;
+  background: transparent;
   height: 350px;
-  width:100%;
+  width: 100%;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   transition: 0.5s;
-
 }
 
 .layer:hover {
   background:darkgray;
-
-
-  
 }
+
 .layer h3{
-  width:100%;
+  width: 100%;
   font-weight: 500;
   color:#fff;
   font-size: 26px;
-  bottom:0;
+  bottom: 0;
   left: 50%;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   position: absolute;
   opacity: 0;
   transition: 0.5s;
-
 }
 
 .layer:hover h3{
   bottom: 49%;
   opacity: 1;
-
 }
 
 .facilities{
@@ -412,19 +407,18 @@ padding-top: 50px ;
  margin: auto; 
  text-align: center;
  padding-top: 100px;
-
 }
 
 .facilities-col{
   flex-basis: 34%;
-  border-radius:10px ;
-  margin-bottom:5%;
+  border-radius: 10px ;
+  margin-bottom: 5%;
   text-align: left;
   padding-left: 10px;
 }
 
 .facilities-col img{
-width:100%;
+width: 100%;
 border-radius: 10px;
 
 }
