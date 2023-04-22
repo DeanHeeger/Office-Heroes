@@ -143,14 +143,14 @@ outline: none;
     font-weight: 400;
 }
 form button:hover{
-    background-color: green;
+    background-color: blue;
 }
 form button i {
     margin:0 5px;
 }
 form button i,
  form .SubmitTextt i:hover{
-    background-color: green;
+    background-color: blue;
     width: 100%;
  }
 form .buttons{

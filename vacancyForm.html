@@ -14,7 +14,7 @@ form {
   font-size: 1.2rem;
   line-height: 1.5;
   box-shadow: 5px  solid ;
-  color: #3e8e41;
+  color: navy;
   padding: 10px;
 }
 
@@ -38,7 +38,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: navy;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -48,7 +48,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: navy;
 }
 
 input[type="file"] {
@@ -71,7 +71,7 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::before {
   content: 'Select File';
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: navy;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -79,7 +79,7 @@ input[type="file"]::before {
 }
 
 input[type="file"]:hover::before {
-  background-color: #3e8e41;
+  background-color: blue;
 }
 
 
@@ -98,7 +98,7 @@ input[type="file"]:hover::before {
         
         <label for="position">Position</label>
         <input type="text" id="position" name="position" required>
-        <label for="resume">Insert Your picture</label>
+        <label for="resume">Insert Your Picture</label>
         <input type="file" id="resume" name="picture" accept="image/*" >
         
         <label for="experience">Work Experience</label>
@@ -111,7 +111,7 @@ input[type="file"]:hover::before {
         <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
         
         <button type="submit">Submit Application</button>
-      </form>
+    </form>
       <script>
         const form = document.getElementById('vacancyForm');
             form.addEventListener('submit', function(event) {
@@ -133,6 +133,6 @@ input[type="file"]:hover::before {
             }
             });
             
-            </script>
+      </script>
 </body>
 </html>
