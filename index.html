@@ -14,6 +14,7 @@
     <link rel='stylesheet' href='Mzamo_css.css'/>
     <link rel="stylesheet" href="Mzamo_css - Copy">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="cookie.css">
     <script src="mainJS.js"></script>
     <script src="nav.js"></script>
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -137,6 +138,40 @@
       </div>
         
     <!-- navbar-area end -->
+
+    <div class="wrapper">
+      <img src="cookie.png" alt="">
+      <div class="content">
+          <header>Cookies Consent</header>
+          <p>This website uses cookies to ensure you get the best experience on our website.</p>
+          <div class="buttons">
+              <button class="item">I understand</button>
+              <a href="#" class="item">Learn more</a>
+          </div>
+      </div>
+  </div>
+
+  <script>
+    const cookieBox = document.querySelector(".wrapper"),
+    acceptBtn = cookieBox.querySelector(".buttons button");
+
+    acceptBtn.onclick = ()=>{
+        //this sets cookie for 1 month, after 1 month, cookie will expire automatically.
+        document.cookie = "CookieBy=Office Heroes; max-age="+60*60*24*30; //1min=60sec, 1hr=60min, 60min*24 means for 1 day and *30 means for 1 month.
+
+        //if the above cookie is set.
+        if(document.cookie){
+            cookieBox.classList.add("hide"); //this will hide the cookie box once cookie is set.
+            alert("User accepted cookie for this site!");
+            //if cookie can't be set, display an error message.
+        } else {
+            alert("Cookie can't be set!");
+        }
+    }
+    //hide cookie box if cookie is set and not expired
+    //let checkCookie = document.cookie.indexOf("CookieBy=OfficeHeroes");
+    ///checkCookie != 1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+</script>
 
 <!--Text box-->
 <section class="header">
