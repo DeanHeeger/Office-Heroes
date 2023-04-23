@@ -64,9 +64,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit Us</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contactStyle.css"/>
     <!--<link rel="stylesheet" href="Mzamo_css.css"/>-->
+    <script src="con"></script>
 </head>
 <body>
    <div class="container">
@@ -77,7 +78,7 @@
         </div>
 
         <div>
-          <input type="text" id="phone" placeholder="Your Phone Number"/>
+          <input type="tel" id="phone" placeholder="Your Phone Number"/>
         </div>
 
         <div>
@@ -91,11 +92,11 @@
       </div>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
+    <!--<script>
         function sendEmail() {
             // Format the phone number using regular expression
             const phone = document.getElementById("phone").value;
-            const formattedPhone = phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+            const formattedPhone = phone.replace(/(\d{3})(\d{3})(\d{4})$/, "($1) $2-$3");
             
             // Send email with formatted phone number
             Email.send({
@@ -117,6 +118,47 @@
                 window.location.href = 'contactUs.html';
             }
         }
-    </script>
+    </script>-->
+  <script>
+// Format phone number when input is changed
+const phoneInput = document.getElementById('phone');
+phoneInput.addEventListener('input', () => {
+  // Remove all non-numeric characters from the phone number
+  const cleanedInput = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+
+  // Format the cleaned phone number using regular expressions
+  const formattedInput = cleanedInput.replace(/^(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3');
+
+  // Update the input field value with the formatted phone number
+  phoneInput.value = formattedInput;
+});
+
+// Send email when form is submitted
+function sendEmail() {
+  // Format the phone number using regular expression
+  const phone = document.getElementById("phone").value;
+  const formattedPhone = phone.replace(/(\d{3})(\d{3})(\d{4})$/, "($1) $2-$3");
+
+  // Send email with formatted phone number 
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "oh45675@outlook.com",
+    Password: "9913DEDBC48EAF416A8A4C45F16E21A2AB3B",
+    To: 'oh45675@outlook.com',
+    From: "oh45675@outlook.com",
+    Subject: "New Message Enquiry",
+    Body: "Name: " + document.getElementById("names").value +
+      "<br> Phone no: " + formattedPhone +
+      "<br> Message: " + document.getElementById("message").value
+  });
+
+  if (window.confirm("Message sent successfully! Go to home page?")) {
+    window.location.href = 'index.html';
+  } else {
+    window.location.href = 'contactUs.html';
+  }
+}
+
+  </script>
 </body> 
 </html>
