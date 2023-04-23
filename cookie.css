@@ -11,7 +11,7 @@
 
 .wrapper.hide {
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
     transition: all 0.3s ease;
 }
 
