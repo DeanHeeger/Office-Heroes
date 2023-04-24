@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <header>Registration Form</header>
-        <form action="">
+        <form id="form" action="">
 <div class="form first">
     <div class="details person">
         <span class="title">Personal Details</span>
@@ -161,7 +161,29 @@
     </div>
   
         </form>
-
+<script>
+   
+    const form = document.getElementById('form');
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); // prevent the default form submission
+         
+          const formData = new FormData(form); // create a new FormData object
+         
+          // send the form data using fetch()
+          fetch('/article/formdata/post/user-avatar', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .catch(error => console.error(error));
+          for (const [key, value] of formData.entries()) {
+          console.log(key, value);
+          
+        }
+        });
+        
+</script>
     </div>
 </body>
 </html>
